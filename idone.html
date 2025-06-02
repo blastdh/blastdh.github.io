@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="wrap">
+        <header>
+            <div class="header-left">
+                <a href="idone.html" class="idone-brand">IDone</a>
+                <div class="divider hide-mobile"></div>
+                <a href="#" class="home hide-mobile">Home</a>
+                
+            </div>
+
+            <nav>
+                <a href="#" class="menu-open hide-desktop">
+                    <img src="menu.svg" alt="Open Menu">
+                </a>
+                <ul class="main-nav">
+                    <li>
+                        <a href="#" class="menu-close hide-desktop">
+                            <img src="close.svg" alt="Close Menu">
+                        </a>
+                    </li>
+                        <li><a href="#">Our Product</a></li>
+                        <li><a href="#">The Process</a></li>
+                        <li><a href="#">Preferences</a></li>
+                        <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <main>
+        <h1>Small Wins. Big Impact</h1>
+        <p class="subhead">
+            IDone is my first project. Your companion for daily outcome. With just a few taps, you can track what you've accomplished, build saving habits, and see real progress every day. IDone helps you stay consistent and feel accomplished.
+        </p>
+        <a href="#" class="download">Download now!</a>
+    </main>
+
+    <div class="dlogo">
+        <div class="logo-overall">
+            <img src="idone.svg" class="idone-logo" alt="IDone Logo">
+            <div class="inner-circle"></div>
+            <div class="outer-circle"></div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+
+        const menu = document.querySelector(".main-nav");
+        const menuBtn = document.querySelector(".menu-open");
+        const closeBtn = document.querySelector(".menu-close");
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add("open")
+        })
+        
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove("open")
+        })
+
+    </script>
+</body>
+</html>
